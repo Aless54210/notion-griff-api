@@ -22,7 +22,7 @@ const PORT = process.env.PORT || 8080;
 const db = require("./models/index");
 
 // cors implementation
-app.use(cors({origin: "http://localhost:8081",credentials: true}));
+app.use(cors());
 
 // bodyParser implementation
 app.use(bodyParser.json());
